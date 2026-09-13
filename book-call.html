@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ArrowTechz Booking</title>
+  <link rel="stylesheet" href="book-call.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <section class="consultation-box">
+    <h1><span>ArrowTechz</span> 1-1 Business Consultation</h1>
+    <p><strong>Duration:</strong> 30 Minutes</p>
+    <p><strong>Please book a call if:</strong></p>
+    <ul>
+      <li>You want complete ArrowTechz details to launch/scale your tech business</li>
+      <li>You're 100% sure you'll attend the call</li>
+    </ul>
+  </section>
+
+  <section class="time-slot-box">
+    <h2>Select Your Time Slot</h2>
+    <input type="date" class="date-picker" id="bookingDate">
+
+    <div class="slots">
+      <label><input type="radio" name="slot"><span>11:00 AM</span></label>
+      <label><input type="radio" name="slot"><span>11:30 AM</span></label>
+      <label><input type="radio" name="slot"><span>12:00 PM</span></label>
+      <label><input type="radio" name="slot"><span>12:30 PM</span></label>
+      <label><input type="radio" name="slot"><span>01:00 PM</span></label>
+      <label><input type="radio" name="slot"><span>01:30 PM</span></label>
+    </div>
+
+    <button class="book-btn" onclick="checkBooking()">Book Now</button>
+
+    
+    <p id="warning" class="warning-text">⚠️ Please select Date and Time slot.</p>
+  </section>
+</body>
+</html>

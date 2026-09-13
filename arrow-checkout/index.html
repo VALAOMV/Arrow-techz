@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ArrowTechz - Final Payment Summary</title>
+<link rel="stylesheet" href="index.css" />
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="/checkout.js"></script>
+</head>
+
+<body>
+  <section class="checkout-card">
+    <h1><span class="emoji">🧾</span> Final Payment Summary</h1>
+
+    <ul class="feature-list">
+      <li><span>🚀</span> 1-Year Premium Access — <b>$697/year</b></li>
+      <li><span>🧠</span> 20 Hr Masterclass — <b>$1,997</b></li>
+      <li><span>⚡</span> Instant Traffic Secrets — <b>$1,997</b></li>
+      <li><span>✍️</span> Copywriting Plug-n-Play — <b>$1,497</b></li>
+      <li><span>📧</span> Email Blueprint — <b>$997</b></li>
+      <li><span>📦</span> Proven Funnels Pack — <b>$2,997</b></li>
+      <li class="priceless"><span>⏱️</span> Timeline Domination Suite — <b>Priceless</b></li>
+      <li class="priceless"><span>🌐</span> VIP Community Access — <b>Priceless</b></li>
+    </ul>
+
+    <div class="total-value">🎯 TOTAL VALUE: $10,182</div>
+
+    <h2>Pay Via:</h2>
+    <label><input type="radio" name="gateway" value="cashfree" checked /> Cashfree</label>
+    <label><input type="radio" name="gateway" value="razorpay" /> Razorpay</label>
+
+    <button id="pay-btn">Complete Order</button>
+  </section>
+
+<script src="checkout.js"></script>
+<!-- Gateway SDKs (loaded on demand in JS) -->
+</body>
+</html>

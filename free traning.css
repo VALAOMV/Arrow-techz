@@ -1,0 +1,177 @@
+/* =========================
+   GENERAL SETUP
+========================= */
+body.futuristic-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(ellipse at center, #0a0a23 0%, #0a0a23 100%);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+.futuristic-header {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #0a0a23;
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.glow-text {
+  font-size: 2.5rem;
+  color: #00ff88;
+  text-shadow: 0 0 15px #00ff88;
+}
+
+/* =========================
+   TRAININGS CONTAINER
+========================= */
+.trainings-container,
+.trainings-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   TRAINING CARD (SINGLE SOURCE)
+========================= */
+.training-card {
+  background: rgba(5, 5, 30, 0.85);
+  border: 2px solid #00ff88;
+  border-radius: 15px;
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ff88;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: pulseGlow 2.5s infinite alternate;
+}
+
+.training-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ffd0, 0 0 60px #00ffd0;
+}
+
+.training-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  animation: floatImg 3s ease-in-out infinite;
+}
+
+.training-card h3 {
+  color: #00ff88;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.training-card p {
+  color: #ffffffcc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   UNIVERSAL CTA BUTTON
+========================= */
+.cta-btn {
+  display: inline-block;
+  background-color: #00ff88;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.7);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  box-shadow: 0 0 25px rgba(0, 255, 136, 1),
+              0 0 50px rgba(0, 255, 136, 0.8);
+}
+
+.training-card .cta-btn {
+  margin-top: 15px;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px #00ff88;
+  }
+  100% {
+    box-shadow: 0 0 35px #00ff88, 0 0 50px #00ff88;
+  }
+}
+
+@keyframes floatImg {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+.arrowtechz-footer {
+  background: linear-gradient(90deg, #00ff88 0%, #0077ff 100%);
+  padding: 25px 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 25px #00ff88;
+  animation: pulseGlowFooter 3s infinite alternate;
+  border-top: 2px solid rgba(0, 255, 200, 0.6);
+}
+
+.arrowtechz-footer p {
+  margin: 5px;
+  text-shadow: 0 0 10px #00ff;
+}
+
+.arrowtechz-footer .tech-team {
+  color: #000;
+  background: #00ff88;
+  padding: 2px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ff88;
+  animation: blinkText 2s infinite;
+}
+
+/* =========================
+   FOOTER ANIMATIONS
+========================= */
+@keyframes pulseGlowFooter {
+  0% {
+    box-shadow: 0 -2px 20px #00ff88;
+  }
+  100% {
+    box-shadow: 0 -2px 35px #00ff88;
+  }
+}
+
+@keyframes blinkText {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

@@ -1,0 +1,128 @@
+/* Reset & Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Container with blur */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+  text-align: center;
+  max-width: 90vw;
+}
+
+/* Glowing Heading */
+.glow-heading {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+  margin-bottom: 30px;
+}
+
+/* Template Image */
+.template-image-wrapper img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  margin-bottom: 40px;
+}
+
+/* Unlock Button */
+.unlock-btn {
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #00ffe0, #0077ff);
+  color: #000;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00ffe0, 0 0 30px #0077ff;
+  transition: all 0.3s ease;
+}
+
+.unlock-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffe0, 0 0 50px #0077ff;
+}
+.container {
+  background: #111;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00f7ff44;
+  width: fit-content;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.glow-heading {
+  font-size: 2rem;
+  color: #00f7ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00f7ff99;
+}
+
+.unlock-btn {
+  background: linear-gradient(to right, #00f7ff, #007bff);
+  color: white;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00f7ff88;
+  transition: 0.3s ease;
+}
+
+.unlock-btn:hover {
+  background: linear-gradient(to right, #00cfff, #0055ff);
+  transform: scale(1.05);
+}
+
+.template-disclaimer {
+  margin-top: 20px;
+  background: #1a1a1a;
+  border: 1px solid #00f7ff33;
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #ffffffcc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 0 10px #00f7ff22;
+}
+.unlock-btn {
+  display: inline-block; /* Works for <a> too */
+  text-decoration: none;
+  background: linear-gradient(to right, #00f7ff, #007bff);
+  color: white;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00f7ff88;
+  transition: 0.3s ease;
+}
+
+.unlock-btn:hover {
+  background: linear-gradient(to right, #00cfff, #0055ff);
+  transform: scale(1.05);
+}

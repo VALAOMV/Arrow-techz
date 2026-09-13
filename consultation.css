@@ -1,0 +1,89 @@
+
+    .form-box {
+      background: #0a0a23;
+      border-radius: 25px;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 40px #00ff88;
+      color: #fff;
+    }
+
+    .form-box h2 {
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ff88;
+    }
+
+    .form-box label {
+      display: block;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .form-box input[type="text"],
+    .form-box input[type="email"],
+    .form-box textarea {
+      width: 100%;
+      padding: 12px;
+      background: #0a0a23;
+      color: #00ff88;
+      border: 2px solid #00ff88;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .form-box textarea {
+      resize: vertical;
+    }
+
+    .form-box input[type="submit"] {
+      background: #00ff88;
+      color: #0a0a23;
+      font-weight: bold;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 30px;
+      box-shadow: 0 0 15px #00ff88;
+    }
+
+    .form-box input[type="submit"]:hover {
+      background: #00ff88;
+    }
+    
+     body {
+     background-color: #0a0a23; /* Changes full background */
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', sans-serif;
+     color: #fff;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.book-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  background: #00ff99;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background: #00cc77;
+  box-shadow: 0 0 30px #00cc77, 0 0 60px #00cc77;
+}
+
+
+
+
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arrow Techz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0a0a23;
+      
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #00e0ff;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    button {
+      background: #00e0ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff0080;
+      color: #fff;
+      transition: 0.3s;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #00ff99;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Arrow Techz Frontend</h1>
+  <p>Test the backend connection below 👇</p>
+
+  <form id="registerForm">
+    <input type="text" id="name" placeholder="Enter your name" required />
+    <input type="email" id="email" placeholder="Enter your email" required />
+    <button type="submit">Register</button>
+  </form>
+
+  <button id="testApi">Test API</button>
+
+  <div id="result"></div>
+
+  <script>
+    // Handle register form
+    document.getElementById("registerForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      const res = await fetch("/api/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email })
+      });
+      const data = await res.json();
+      document.getElementById("result").innerText = data.message;
+    });
+
+    // Handle test API button
+    document.getElementById("testApi").addEventListener("click", async () => {
+      const res = await fetch("/api/test");
+      const data = await res.json();
+      document.getElementById("result").innerText = data.message;
+    });
+  </script>
+</body>
+</html>

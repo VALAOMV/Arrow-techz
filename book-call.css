@@ -1,0 +1,146 @@
+body {
+  background-color: #0a0a23;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+h1, h2 {
+  text-shadow: 0 0 10px #00ff88;
+}
+
+h1 span {
+  color: #00ff88;
+}
+
+.consultation-box {
+  background: #0a0a23;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 30px #00ff88;
+  margin-bottom: 40px;
+}
+
+.time-slot-box {
+  background: #0a0a23;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 0 40px #00ff88;
+}
+
+.date-picker {
+  background: #00ff88;
+  color: #000;
+  border: 2px solid #00ff88;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.slots label {
+  background: linear-gradient(to right, #0a0a23, #0a0a23);
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: 0 0 10px #00ff88;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slots input[type="radio"] {
+  display: none;
+}
+
+.slots input[type="radio"]:checked + span {
+  background: #00ff88;
+  color: #0a0a23;
+  box-shadow: 0 0 15px #00ff88;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.slots span {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.book-btn {
+  display: inline-block;
+  background: #00ff88;
+  color: #0a0a23;
+  padding: 15px 35px;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px #00ff88;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #00ff88;
+}
+/* Animated futuristic warning */
+.warning-text {
+    display: none;
+    color: #FF3333;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 0 0 8px #FF3333;
+    animation: glow 1.2s infinite alternate;
+}
+
+/* Futuristic glow animation */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #FF3333, 0 0 10px #FF3333; }
+    100% { text-shadow: 0 0 12px #FF6666, 0 0 20px #FF6666; }
+}
+/* Book Now Button - Hover Glow */
+.book-btn:hover {
+    background: #00ff88;
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+    transform: scale(1.05);
+}
+
+/* Book Now Button - Click Animation */
+.book-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+/* Time Slot Glow on Hover */
+.slots label span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #00ff88;
+    border-radius: 8px;
+    color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0 0 8px #00ff88;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.slots label span:hover {
+    background-color: #00ff88;
+    color: #0a0a23;
+    box-shadow: 0 0 15px #00ff88;
+    transform: scale(1.05);
+}
+
+/* Selected effect (when radio is checked) */
+.slots input[type="radio"]:checked + span {
+    background-color: #00ff88;
+    color: #0a0a23;
+    box-shadow: 0 0 20px #00ff88;
+}
+
