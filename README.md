@@ -1,51 +1,49 @@
 # Arrow Techz
 
-Arrow Techz is a SaaS project focused on building practical digital solutions for businesses and creators.
+Arrow Techz is an ongoing SaaS project focused on building practical digital solutions for businesses and creators.
 
 ## Overview
 
-I built Arrow Techz as a hands-on project to take a product idea from concept to a working web application. The project includes a responsive frontend, interactive features, checkout-related functionality, backend components, and supporting assets.
+I started Arrow Techz to take a product idea from concept into a real web project while developing my skills across frontend and backend development.
 
-The goal of the project is to create useful digital tools while gaining practical experience across different parts of the development process.
+The frontend and core user-facing experience have been developed, while the backend is currently in progress. The project includes multiple web pages, interactive functionality, checkout-related components, and supporting assets.
 
-## Features
+## Current Features
 
-- Responsive web interface
+- Responsive web interfaces
 - Interactive frontend functionality
-- Product/service presentation pages
-- Checkout-related functionality
-- Backend components
+- Product and service presentation pages
+- Checkout-related components
 - Reusable web assets and templates
-- Business-focused digital solutions
+- Initial backend development
 
 ## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
-- Node.js / backend components
+- Node.js / backend development
 - Git & GitHub
-
-## Project Structure
-
-- `Backend/` — Backend-related project files
-- `arrow-checkout/` — Checkout-related functionality
-- HTML/CSS/JavaScript files — Frontend pages and functionality
-- Assets — Images and other resources
 
 ## What I Learned
 
-Building Arrow Techz helped me understand how to turn an idea into a working product rather than focusing only on individual coding exercises.
+Building Arrow Techz has helped me understand what is involved in taking an idea beyond individual coding exercises and turning it into a larger project.
 
-Through the project, I learned more about structuring a larger application, connecting different parts of a project, debugging issues, improving user experience, working with Git and GitHub, and continuously improving a product as new requirements arise.
+I have learned how to structure a project, build interactive frontend features, work with different parts of an application, debug problems, use Git and GitHub, and continuously improve a project as I develop new features.
+
+Working on the backend has also helped me identify areas where I need to strengthen my full-stack development skills, which is something I am actively working on.
+
+## Project Status
+
+**In progress** — the frontend is developed and the backend is currently being completed and improved.
 
 ## Future Improvements
 
-- Improve the overall application architecture
-- Expand backend functionality
-- Add more automated features
-- Improve authentication and security
-- Add more production-ready features and testing
+- Complete and expand backend functionality
+- Improve application architecture
+- Add further production-ready features
+- Improve testing and security
+- Continue improving the user experience
 
 ## Author
 
